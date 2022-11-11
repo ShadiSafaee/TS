@@ -36,3 +36,21 @@ const kitty:Cat = {
 }
 }
 
+interface People {
+    name: string
+}
+interface Employee {
+    readonly id: number;
+}
+interface Engineer extends People, Employee {
+    level: string,
+    languages: string[]
+}
+
+const eng1:Engineer = {
+name: 'Asghar',
+id: 3232,
+level: 'B',
+languages: ['JS', 'TS']
+}
+
