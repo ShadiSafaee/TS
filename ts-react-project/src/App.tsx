@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import "./App.css";
 import Greeter from "./components/Greeter";
 import Introduction from "./components/Introduction";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
       <Greeter person="Shadi" />
@@ -12,6 +12,6 @@ function App() {
       <Introduction />
     </div>
   );
-}
+};
 
 export default App;

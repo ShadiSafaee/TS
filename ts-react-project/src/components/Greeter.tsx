@@ -1,15 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 
-interface GreeterProps {
+interface IProps {
   person: string;
-  age: number;
+  age: boolean;
 }
-const Greeter = ({ person, age }: GreeterProps): JSX.Element => {
-  return (
-    <div>
-      Hello, I'm {person} and {age} years old,
-    </div>
-  );
+const Greeter: FC<IProps> = ({ person }: IProps) => {
+  return <div>Hello, I'm {person}</div>;
 };
 
 export default Greeter;
